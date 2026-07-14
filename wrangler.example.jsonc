@@ -1,0 +1,31 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "jogos-gratis-telegram-bot",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-07-13",
+	"compatibility_flags": ["nodejs_compat"],
+	"vars": {
+		// approval: acesso liberado pelo proprietário
+		// owner_only: somente o proprietário
+		// open: qualquer pessoa pode ativar o bot
+		"ACCESS_MODE": "approval",
+		"CHECK_INTERVAL_LABEL": "30 minutos"
+	},
+	"observability": {
+		"enabled": true,
+		"head_sampling_rate": 1
+	},
+	"triggers": {
+		"crons": [
+			"*/30 * * * *"
+		]
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "jogos-gratis-bot",
+			"database_id": "SUBSTITUA_PELO_ID_DO_D1",
+			"migrations_dir": "migrations"
+		}
+	]
+}

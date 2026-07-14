@@ -1,0 +1,4 @@
+TELEGRAM_BOT_TOKEN="token-apenas-para-desenvolvimento-local"
+TELEGRAM_WEBHOOK_SECRET="segredo-apenas-para-desenvolvimento-local"
+ADMIN_SETUP_KEY="chave-apenas-para-desenvolvimento-local"
+OWNER_CHAT_ID="123456789"
