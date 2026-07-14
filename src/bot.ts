@@ -349,7 +349,7 @@ async function handleStart(
   await sendMessage(
     env.TELEGRAM_BOT_TOKEN,
     chatId,
-    `✅ Avisos ativados. Vou verificar novas ofertas a cada ${escapeHtml(checkIntervalLabel(env))} e não repetirei a mesma campanha automaticamente.`,
+    `✅ Avisos ativados. Vou verificar novas ofertas a cada ${escapeHtml(checkIntervalLabel(env))} e não repetirei a mesma promoção automaticamente.`,
   );
   if (subscriber) await sendCurrentGames(env, subscriber);
 }

@@ -135,7 +135,7 @@ export function formatGiveawayBlock(giveaway: Giveaway): string {
     ? giveaway.endsAt
       ? `⏳ Disponível até: ${formatDate(giveaway.endsAt)}`
       : "⏳ Término não informado"
-    : "⚪ Campanha não está mais ativa";
+    : "⚪ Promoção não está mais ativa";
 
   return [
     `🎮 <b>${title}</b>`,
