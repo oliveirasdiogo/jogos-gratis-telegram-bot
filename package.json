@@ -2,7 +2,7 @@
   "name": "jogos-gratis-telegram-bot",
   "version": "1.0.0",
   "private": true,
-  "description": "Bot serverless de Telegram que avisa sobre jogos grátis para PC sem repetir campanhas.",
+  "description": "Bot serverless de Telegram que avisa sobre jogos grátis para PC sem repetir promoções.",
   "license": "MIT",
   "repository": {
     "type": "git",

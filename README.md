@@ -5,7 +5,7 @@
 [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
 
 Bot serverless que procura jogos completos gratuitos para PC e envia avisos pelo
-Telegram. Cada campanha é enviada automaticamente uma única vez para cada
+Telegram. Cada promoção é enviada automaticamente uma única vez para cada
 usuário. Consultas manuais permitem rever as ofertas ativas ou o histórico dos
 últimos sete dias.
 
@@ -20,7 +20,7 @@ Cloudflare D1.
   PC.
 - Filtragem de jogos completos; loot, DLCs e betas informados como outros tipos
   pela fonte são descartados.
-- Deduplicação por campanha e por chat do Telegram.
+- Deduplicação por promoção e por chat do Telegram.
 - Histórico manual dos últimos sete dias com `/ultimos7dias`.
 - Preferências de lojas diferentes para cada usuário.
 - Nova tentativa segura quando um envio falha.
@@ -45,7 +45,7 @@ Cron da Cloudflare (a cada 30 min)
  D1 guarda catálogo + histórico
               |
               v
- envia somente campanhas ainda não
+ envia somente promoções ainda não
  notificadas para cada chat aprovado
 ```
 
@@ -405,9 +405,9 @@ altera a frequência; o fuso importa quando você escolhe um horário fixo.
 
 ## Regras de repetição e histórico
 
-- O ID fornecido pela GamerPower identifica a campanha.
-- Uma campanha não é enviada duas vezes automaticamente para o mesmo chat.
-- Se o mesmo jogo aparecer no futuro com um novo ID de campanha, será avisado
+- O ID fornecido pela GamerPower identifica a promoção.
+- Uma promoção não é enviada duas vezes automaticamente para o mesmo chat.
+- Se o mesmo jogo aparecer no futuro com um novo ID de promoção, será avisado
   novamente.
 - A lista exibida durante `/start` é registrada como entregue, evitando que o
   cron repita aqueles jogos logo depois.
