@@ -3,6 +3,8 @@
 [![Verificações](https://github.com/oliveirasdiogo/jogos-gratis-telegram-bot/actions/workflows/ci.yml/badge.svg)](https://github.com/oliveirasdiogo/jogos-gratis-telegram-bot/actions/workflows/ci.yml)
 [![Licença MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-blue.svg)](LICENSE)
 [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
+[![TypeScript 7](https://img.shields.io/badge/TypeScript-7.0-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Node.js 20+](https://img.shields.io/badge/Node.js-20%2B-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 
 Bot serverless que procura jogos completos gratuitos para PC e envia avisos pelo
 Telegram. Cada promoção é enviada automaticamente uma única vez para cada
@@ -12,6 +14,25 @@ usuário. Consultas manuais permitem rever as ofertas ativas ou o histórico dos
 Depois da publicação, seu computador pode ficar desligado: o código roda no
 Cloudflare Workers, o agendamento usa Cron Triggers e os dados ficam no banco
 Cloudflare D1.
+
+## Índice
+
+- [Recursos](#recursos)
+- [Como funciona](#como-funciona)
+- [Comandos do Telegram](#comandos-do-telegram)
+- [Custo esperado](#custo-esperado)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação completa no Windows](#instalação-completa-no-windows)
+- [Escolher quem pode usar o bot](#escolher-quem-pode-usar-o-bot)
+- [Alterar o intervalo de consulta](#alterar-o-intervalo-de-consulta)
+- [Regras de repetição e histórico](#regras-de-repetição-e-histórico)
+- [Preferências de plataforma](#preferências-de-plataforma)
+- [Desenvolvimento e atualização](#desenvolvimento-e-atualização)
+- [Estrutura do projeto](#estrutura-do-projeto)
+- [Solução de problemas](#solução-de-problemas)
+- [Segurança](#segurança)
+- [Fonte das ofertas](#fonte-das-ofertas)
+- [Licença](#licença)
 
 ## Recursos
 
