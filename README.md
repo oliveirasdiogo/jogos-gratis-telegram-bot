@@ -4,7 +4,7 @@
 [![Licença MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-blue.svg)](LICENSE)
 [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
 [![TypeScript 7](https://img.shields.io/badge/TypeScript-7.0-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Node.js 20+](https://img.shields.io/badge/Node.js-20%2B-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![Node.js 22+](https://img.shields.io/badge/Node.js-22%2B-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 
 Bot serverless que procura jogos completos gratuitos para PC e envia avisos pelo
 Telegram. Cada promoção é enviada automaticamente uma única vez para cada
@@ -126,7 +126,7 @@ Você precisará de:
 
 - conta gratuita no [Telegram](https://telegram.org/);
 - conta gratuita na [Cloudflare](https://dash.cloudflare.com/sign-up);
-- Node.js 20 ou mais recente, de preferência a versão LTS;
+- Node.js 22 ou mais recente, de preferência a versão LTS;
 - Git, caso queira clonar o repositório em vez de baixar o ZIP.
 
 O Node.js e o Git são necessários apenas para configurar, publicar e atualizar o
